@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviourPunCallbacks
 {
     private float _speed;
     private float _turningSpeed;
@@ -14,17 +15,19 @@ public class PlayerController : MonoBehaviour
         _turningSpeed = 10f;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
+        if(!photonView.IsMine)
+            return;
         
         float movementX = Input.GetAxis("Horizontal");
         float movementZ = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(movementX, 0, movementZ);
         
-        transform.Translate(movement * _speed * Time.fixedDeltaTime, Space.World);
+        transform.Translate(movement * _speed * Time.deltaTime, Space.World);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), Time.fixedDeltaTime * _turningSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), Time.deltaTime * _turningSpeed);
 
     }
 }
