@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour{
     private BrickGenerator brickGenerator;
+    public List<GameObject> spawnerList = new List<GameObject>();
+    
     void Start()
     {
         brickGenerator = GameObject.Find("BrickGenerator").GetComponent<BrickGenerator>();
@@ -21,8 +23,12 @@ public class Spawner : MonoBehaviour{
         Debug.Log("Exit");
     }
 
+    private void OnTriggerEnter(Collider other){
+        Debug.Log("Enter");
+    }
+
     IEnumerator WaitAndCreate(Vector3 pos){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         brickGenerator.CheckAndCreateDelayedBricks(pos);
     }
 }

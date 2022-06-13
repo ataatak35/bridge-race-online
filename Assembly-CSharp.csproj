@@ -59,12 +59,26 @@
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\BrickGenerator.cs" />
+<<<<<<< Updated upstream
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Scripts\Bridge.cs" />
      <Compile Include="Assets\Scripts\PlayerCollider.cs" />
+=======
+     <Compile Include="Assets\Scripts\Bridge.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollider.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+     <Compile Include="Assets\_Gloomy_Hyper\Script\CharacterSelect.cs" />
+     <Compile Include="Assets\_Gloomy_Hyper\Script\MouseOrbitImproved.cs" />
+     <None Include="Assets\_Gloomy_Hyper\Shaders\Toon_Character.shader" />
+     <None Include="Assets\_Gloomy_Hyper\Shaders\AlphaMask.shader" />
+     <None Include="Assets\_Gloomy_Hyper\Shaders\Gradient Skybox.shader" />
+>>>>>>> Stashed changes
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
