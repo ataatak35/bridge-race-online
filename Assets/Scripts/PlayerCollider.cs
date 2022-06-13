@@ -42,6 +42,7 @@ public class PlayerCollider : MonoBehaviour{
 
         if (other.tag.Equals("brick") && playerController.collectedBricks.Count > 0){
             bridge = other.gameObject.transform.parent.GetComponent<Bridge>();
+            bridge.stopper.transform.localPosition = bridge.brickList[bridge.brickList.IndexOf(other.gameObject)+2].transform.localPosition;
             other.tag = "created";
             other.gameObject.GetComponent<MeshRenderer>().enabled = true;
             other.gameObject.GetComponent<BoxCollider>().isTrigger = false;
