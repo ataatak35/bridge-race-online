@@ -1,33 +1,48 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviourPunCallbacks
-{
-    private float _speed;
-    private float _turningSpeed;
+public class PlayerController : MonoBehaviourPunCallbacks{
+    public Transform back;
+    public Vector3 backPos;
+    private float speed;
+    private float turningSpeed;
+    public string color;
+    private Rigidbody rigidbody;
+    [SerializeField] private Joystick joystick;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Animator backAnimator;
+    
+    public List<GameObject> collectedBricks = new List<GameObject>();
     
     void Start()
     {
-        _speed = 5f;
-        _turningSpeed = 10f;
+        rigidbody = GetComponent<Rigidbody>();
+        joystick = GameObject.Find("Fixed Joystick").GetComponent<Joystick>();
+        //animator = transform.GetChild(0).GetComponent<Animator>();
+        back = transform.GetChild(0);
+        backPos = back.transform.localPosition;
+        speed = 6f;
     }
-
-    private void Update()
+    
+    void FixedUpdate()
     {
-        if(!photonView.IsMine)
+
+        if (!photonView.IsMine)
             return;
         
-        float movementX = Input.GetAxis("Horizontal");
-        float movementZ = Input.GetAxis("Vertical");
+        rigidbody.velocity = new Vector3(joystick.Horizontal * speed, rigidbody.velocity.y, joystick.Vertical * speed
+            );
 
-        Vector3 movement = new Vector3(movementX, 0, movementZ);
-        
-        transform.Translate(movement * _speed * Time.deltaTime, Space.World);
-
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), Time.deltaTime * _turningSpeed);
-
+        if (joystick.Horizontal != 0 || joystick.Vertical != 0){
+            transform.rotation = Quaternion.LookRotation(rigidbody.velocity);
+            playerAnimator.SetBool("isRunning", true);
+            backAnimator.SetBool("isRunning", true);
+        }
+        else{
+            playerAnimator.SetBool("isRunning", false);
+            backAnimator.SetBool("isRunning", false);
+        }
     }
+
 }
