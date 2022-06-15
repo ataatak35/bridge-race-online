@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour{
             );
 
         if (joystick.Horizontal != 0 || joystick.Vertical != 0){
-            //Debug.Log(rigidbody.velocity);
+            //Debug.Log("Horizontal: " + joystick.Horizontal);
+            //Debug.Log("Vertical: " + joystick.Vertical);
             transform.rotation = Quaternion.LookRotation(rigidbody.velocity);
             playerAnimator.SetBool("isRunning", true);
             backAnimator.SetBool("isRunning", true);

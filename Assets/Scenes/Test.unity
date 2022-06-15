@@ -787,7 +787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -860,7 +860,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -1517,7 +1517,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -1595,7 +1595,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -1708,9 +1708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd624153ace0aaf4a89352c776df5f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redMaterial: {fileID: 0}
-  blueMaterial: {fileID: 0}
-  greenMaterial: {fileID: 0}
+  redMaterial: {fileID: 2100000, guid: 131ffea624abe6b469edcd010a969bca, type: 2}
+  blueMaterial: {fileID: 2100000, guid: 02e47a09f410e664d87bee053a1df7fe, type: 2}
+  greenMaterial: {fileID: 2100000, guid: e1efab8a583eff94993a56fe7ef8127b, type: 2}
 --- !u!135 &143267337
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1808,7 +1808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -2359,7 +2359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -3790,7 +3790,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -5056,9 +5056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd624153ace0aaf4a89352c776df5f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redMaterial: {fileID: 0}
-  blueMaterial: {fileID: 0}
-  greenMaterial: {fileID: 0}
+  redMaterial: {fileID: 2100000, guid: 131ffea624abe6b469edcd010a969bca, type: 2}
+  blueMaterial: {fileID: 2100000, guid: 02e47a09f410e664d87bee053a1df7fe, type: 2}
+  greenMaterial: {fileID: 2100000, guid: e1efab8a583eff94993a56fe7ef8127b, type: 2}
 --- !u!135 &544275940
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6202,7 +6202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -6746,7 +6746,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -7707,7 +7707,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -9001,7 +9001,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -9911,7 +9911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -10255,7 +10255,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -10328,7 +10328,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -11677,7 +11677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   back: {fileID: 1697805313}
   backPos: {x: 0, y: 0, z: 0}
-  color: 
+  color: green
   joystick: {fileID: 311171585}
   playerAnimator: {fileID: 0}
   backAnimator: {fileID: 0}
@@ -12937,7 +12937,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -14739,7 +14739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   back: {fileID: 91921596}
   backPos: {x: 0, y: 0, z: 0}
-  color: 
+  color: blue
   joystick: {fileID: 311171585}
   playerAnimator: {fileID: 0}
   backAnimator: {fileID: 0}
@@ -15616,7 +15616,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -17004,7 +17004,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -18656,7 +18656,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -18903,7 +18903,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger
@@ -19749,7 +19749,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4124039235423147023, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811974280668873065, guid: 6bde040d6a4f18d4fa8271d98da84da2, type: 3}
       propertyPath: m_IsTrigger

@@ -52,5 +52,19 @@ public class PlayerCollider : MonoBehaviour{
             playerController.backPos.y -= 1.1f;
             //ridge.slopePlane.transform.localScale += new Vector3(3, 0, 0);
         }
+
+        if (other.tag.Equals("created") && !other.GetComponent<MeshRenderer>().material.name.ToLower()
+            .StartsWith(playerController.color.Substring(0, 1)) && playerController.collectedBricks.Count > 0){
+            //bridge.stopper.transform.localPosition = other.transform.localPosition;
+            other.GetComponent<MeshRenderer>().material = colorMaterialDictionary[playerController.color]; 
+            Destroy(playerController.collectedBricks[playerController.collectedBricks.Count-1]);
+            playerController.collectedBricks.RemoveAt(playerController.collectedBricks.Count-1);
+            playerController.backPos.y -= 1.1f;
+        }
+
+        /*if (other.tag.Equals("created") && !other.GetComponent<MeshRenderer>().material.name.ToLower()
+            .StartsWith(playerController.color.Substring(0, 1)) && playerController.collectedBricks.Count <= 0){
+            bridge.stopper.transform.localPosition = other.transform.localPosition;
+        }*/
     }
 }
