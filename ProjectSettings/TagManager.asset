@@ -4,11 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - green
-  - red
-  - blue
   - brick
   - created
+  - Bullet
+  - Platform Upgrade
+  - Empty Spawn Position
+  - Full Spawn Position
+  - Red
+  - Green
+  - Blue
   layers:
   - Default
   - TransparentFX

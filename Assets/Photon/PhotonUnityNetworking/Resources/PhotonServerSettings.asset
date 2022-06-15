@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 9864b94b-daa8-4014-86c8-4a7859274429
+    AppIdRealtime: a5581e5d-65df-4f50-855b-9bd52e21f056
     AppIdFusion: 
     AppIdChat: 
     AppIdVoice: 
@@ -28,7 +28,7 @@ MonoBehaviour:
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: 
+  DevRegion: tr
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
@@ -39,6 +39,16 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - UpdateLastJoinedPlayer
+  - InstantiatePlayers
+  - PositionPlayers
+  - UpdateSpawnPositionsList
+  - UpdateColorList
+  - SetPlayerColor
+  - GenerateBricks
+  - ChangeColor
+  - PositionBricks
+  - ShuffleBrickList
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
-  DevRegionSetOnce: 0
+  ShowSettings: 1
+  DevRegionSetOnce: 1

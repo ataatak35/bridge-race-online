@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
@@ -13,6 +10,7 @@ public class ConnectionManager : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -29,9 +27,6 @@ public class ConnectionManager : MonoBehaviourPunCallbacks
 
     public void Connect()
     {
-        //Connect to the photon cloud
-        //Load room list scene
-
         if (!PhotonNetwork.IsConnected)
         {
             PhotonNetwork.ConnectUsingSettings();
@@ -52,4 +47,14 @@ public class ConnectionManager : MonoBehaviourPunCallbacks
     }
 
     #endregion
+    
+    public override void OnJoinedRoom()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.LoadLevel("Test");
+        }
+
+    }
+    
 }
